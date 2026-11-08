@@ -1,0 +1,64 @@
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+const config: Config = {
+  title: 'Squid Gain',
+  tagline: '美股 · 黄金 · 红利 · BTC',
+  favicon: 'img/favicon.svg',
+
+  url: 'https://gain.squid.wiki',
+  baseUrl: '/',
+  organizationName: 'squid-wiki',
+  projectName: 'gain',
+  trailingSlash: false,
+
+  onBrokenLinks: 'throw',
+
+  i18n: {defaultLocale: 'zh-Hans', locales: ['zh-Hans']},
+
+  presets: [
+    [
+      'classic',
+      {
+        docs: {
+          routeBasePath: '/',
+          sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/squid-wiki/gain/edit/main/site/',
+        },
+        blog: false,
+        theme: {customCss: './src/css/custom.css'},
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  themeConfig: {
+    colorMode: {respectPrefersColorScheme: true},
+    navbar: {
+      title: 'Squid Gain',
+      logo: {alt: 'Squid', src: 'img/favicon.svg'},
+      items: [
+        {type: 'docSidebar', sidebarId: 'main', position: 'left', label: '笔记'},
+        {href: 'https://squid.wiki', label: 'squid.wiki', position: 'right'},
+        {href: 'https://github.com/squid-wiki/gain', label: 'GitHub', position: 'right'},
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Squid 3G',
+          items: [
+            {label: 'Grid · 能源', href: 'https://grid.squid.wiki'},
+            {label: 'Game · 游戏', href: 'https://game.squid.wiki'},
+            {label: 'Gain · 理财', href: 'https://gain.squid.wiki'},
+          ],
+        },
+      ],
+      copyright: `© ${new Date().getFullYear()} Squid Wiki · 内容采用 CC BY-NC-SA 4.0 · 不构成投资建议`,
+    },
+    prism: {theme: prismThemes.github, darkTheme: prismThemes.dracula},
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;
