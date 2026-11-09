@@ -4,9 +4,9 @@ sidebar_position: 1
 title: 欢迎
 ---
 
-# 📈 Squid Gain
+# 📈 理财
 
-美股、黄金、红利、BTC 的学习笔记，Squid 3G 的理财板块。
+美股、黄金、红利、BTC 的学习笔记，Squid Wiki 的理财板块。
 
 ## 栏目
 
