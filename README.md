@@ -1,6 +1,6 @@
 # 📈 Squid Gain · 理财
 
-> [gain.squid.wiki](https://gain.squid.wiki) —— 美股、黄金、红利、BTC 的学习笔记与年化收益计算器。
+> [finance.squid.wiki](https://finance.squid.wiki) —— 美股、黄金、红利、BTC 的学习笔记与年化收益计算器。
 
 ⚠️ 本站内容**不构成投资建议**，详见 [免责声明](site/docs/disclaimer.md)。
 

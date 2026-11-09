@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gain.squid.wiki/sitemap.xml
+Sitemap: https://finance.squid.wiki/sitemap.xml
